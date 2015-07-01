@@ -7,7 +7,7 @@ var shapes = [];
 var smallBallNumber = 200;
 var bigBallLifeTime = 5000;
 var gameFrequency = 10;
-var smallBallAddFrequency = 100;
+var smallBallAddFrequency = 3;
 var bigBallRadius = 25;
 var smallBallRadius = 10;
 var gameStartSwitch = true;
@@ -241,13 +241,14 @@ var BigBallCreat = function(tmpbigBallshapes) {
 
 var bigBallRemove = function(bigBallOption) {
     var n = bigBallOption;
-    if (bigBallshapes[n].radius > 0) {
+    console.log(bigBallOption);
+    if (bigBallshapes[n]&&(bigBallshapes[n].radius > 1)) {
         bigBallshapes[n].radius -= 1;
+        //setTimeout('bigBallRemove(' + bigBallOption + ')', 30);
     } else {
         bigBallshapes.splice(n, 1);
         return 0;
     }
-    setTimeout('bigBallRemove(' + bigBallOption + ')', 30);
 };
 
 var smallBallAddJudge = function() {
