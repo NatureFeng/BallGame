@@ -241,7 +241,6 @@ var BigBallCreat = function(tmpbigBallshapes) {
 
 var bigBallRemove = function(bigBallOption) {
     var n = bigBallOption;
-    console.log(bigBallOption);
     if (bigBallshapes[n]&&(bigBallshapes[n].radius > 1)) {
         bigBallshapes[n].radius -= 1;
         //setTimeout('bigBallRemove(' + bigBallOption + ')', 30);
