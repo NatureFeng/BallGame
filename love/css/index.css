@@ -3,7 +3,6 @@
   width: 100%;
   font-size: 40px;
   color: #fff;
-  background-size: cover;
   background-color: #000;
   vertical-align: middle;
 }
@@ -15,10 +14,12 @@
 
 .page1 {
   background: url('../source/01.jpg');
+  background-size: cover;
 }
 
 .page2 {
   background: url('../source/02.jpg');
+  background-size: cover;
   color: #000;
 }
 
