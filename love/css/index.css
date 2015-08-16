@@ -1,8 +1,16 @@
-body .page {
+.page {
+  display: table;
+  width: 100%;
   font-size: 40px;
   color: #fff;
   background-size: cover;
   background-color: #000;
+  vertical-align: middle;
+}
+
+.page p {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .page1 {
@@ -11,6 +19,7 @@ body .page {
 
 .page2 {
   background: url('../source/02.jpg');
+  color: #000;
 }
 
 
