@@ -11,18 +11,6 @@
     line-height: 320px;
     text-align: center;
 }
-.page1{
-    background: red;
-}
-.page2{
-    background: yellow;
-}
-.page3{
-    background: maroon;
-}
-.page4{
-    background: green;
-}
 
 /* 箭头 */
 @-webkit-keyframes start {
